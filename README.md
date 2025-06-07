@@ -31,7 +31,7 @@ This application allows users to upload CSV datasets and query them using natura
 
 1. Upload a CSV dataset using the "Choose File" button
 2. Select the uploaded dataset from the dropdown menu
-3. Type your question in natural language (e.g., "Show me all users who are older than 30")
+3. Speak or type your question in natural language (e.g., "Show me all users who are older than 30")
 4. Click "Convert to SQL" to see the generated SQL query and results
 
 ## Example Queries
