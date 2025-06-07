@@ -1,0 +1,7 @@
+flask==2.0.1
+openai==1.12.0
+pandas==2.0.3
+python-dotenv==0.19.0
+SQLAlchemy==1.4.23
+flask-cors==3.0.10
+pandasql==0.7.3 
