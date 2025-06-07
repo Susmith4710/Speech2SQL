@@ -41,6 +41,57 @@ This application allows users to upload CSV datasets and query them using natura
 - "List the top 5 highest paid employees"
 - "How many customers are from each country?"
 
+## Example: Why This App Is Better Than Direct ChatGPT SQL
+
+Below are two screenshots showing the results of asking the same question in both this application and directly in ChatGPT.
+
+### 1. Our Application (Correct Result)
+
+![App Screenshot](screenshot-app.png)
+
+- **Question:** list the oldest person name and his birth date
+- **Generated SQL:**  
+  ```sql
+  SELECT "First Name", "Last Name", "Date of birth"
+  FROM df
+  ORDER BY "Date of birth" ASC
+  LIMIT 1;
+  ```
+- **Result:**  
+  The app correctly finds the oldest person in the uploaded dataset (`people-100.csv`):  
+  - **Date of birth:** 1908-08-22  
+  - **First Name:** Dustin  
+  - **Last Name:** Bailey
+
+---
+
+### 2. ChatGPT Direct SQL (Incorrect Result)
+
+![ChatGPT Screenshot](screenshot-chatgpt.png)
+
+- **Question:** List the oldest person's name and birth date
+- **Generated SQL:**  
+  ```sql
+  SELECT "First Name", "Last Name", "Date of birth" FROM people ORDER BY "Date of birth" ASC LIMIT 1;
+  ```
+- **Result:**  
+  ChatGPT generates a SQL query for a table named `people`, which may not match your actual dataset/table name. The sample answer it provides is:
+  - **First Name:** Phillip  
+  - **Last Name:** Summers  
+  - **Date of birth:** 1910-03-24
+
+---
+
+### **Why the Difference?**
+
+- **Our Application** uses your actual uploaded data and dynamically adapts the SQL to the real table/column names, ensuring the answer is always correct for your dataset.
+- **ChatGPT** generates a generic SQL query and a sample answer, but it does not have access to your real data, so its answer may be incorrect or based on assumptions.
+
+---
+
+**Conclusion:**  
+This app bridges the gap between natural language and real, accurate SQL results on your own data—something ChatGPT alone cannot do!
+
 ## Notes
 - The application currently supports CSV files only
 - Make sure your CSV files have a header row
