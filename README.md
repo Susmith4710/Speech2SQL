@@ -42,6 +42,8 @@ This application allows users to upload CSV datasets and query them using natura
 - "How many customers are from each country?"
 
 ## Notes
+<img width="1177" alt="image" src="https://github.com/user-attachments/assets/bcb7131a-00e8-486b-8c26-4025393b0483" />
+
 
 - The application currently supports CSV files only
 - Make sure your CSV files have a header row
