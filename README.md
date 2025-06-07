@@ -47,7 +47,8 @@ Below are two screenshots showing the results of asking the same question in bot
 
 ### 1. Our Application (Correct Result)
 
-![App Screenshot](screenshot-app.png)
+<img width="1204" alt="image" src="https://github.com/user-attachments/assets/f6737728-9557-4ecf-b797-e6710d854d95" />
+
 
 - **Question:** list the oldest person name and his birth date
 - **Generated SQL:**  
@@ -67,7 +68,7 @@ Below are two screenshots showing the results of asking the same question in bot
 
 ### 2. ChatGPT Direct SQL (Incorrect Result)
 
-![ChatGPT Screenshot](screenshot-chatgpt.png)
+<img width="1180" alt="image" src="https://github.com/user-attachments/assets/1b41206f-88f0-4daf-8f05-358b92ad27a3" />
 
 - **Question:** List the oldest person's name and birth date
 - **Generated SQL:**  
